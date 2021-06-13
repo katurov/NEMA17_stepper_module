@@ -42,4 +42,4 @@ for ( j = 0; j < 50; j ++) {
 }
 ```
 
-Where `PORTB` is byte from [port manupulation](https://www.arduino.cc/en/Reference/PortManipulation) of Arduino.
+Where `PORTB` is byte from [port manupulation](https://www.arduino.cc/en/Reference/PortManipulation) of Arduino. BTW, `delayMicroseconds(650)` is the minimum for my version of NEMA and a powersource (note that more power (A) will alliw you for faster switching); you should determine this number in your particular case.
