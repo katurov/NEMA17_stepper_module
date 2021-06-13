@@ -15,7 +15,7 @@ My NEMA17 is color-coded this way (pin on schema - color of wire):
 
 ## Driving itself
 
-We all have an example of "Stepper" lib on arduino, but after I've tried to use it, it was too noizy! So I used this idea to build own control called 'half-step' which makes this movement fast, powerful and silent. The idea ([source](https://create.arduino.cc/projecthub/voske65/arduino-half-step-stepper-motor-driver-l298n-24df69)) looks like so:
+We all have an example of ["Stepper" lib on arduino](https://www.arduino.cc/en/reference/stepper), but after I've tried to use it, it was too noizy! So I used this idea to build own control called 'half-step' which makes this movement fast, powerful and silent. The idea ([source](https://create.arduino.cc/projecthub/voske65/arduino-half-step-stepper-motor-driver-l298n-24df69)) looks like so:
 
 ![power diagram](https://github.com/katurov/NEMA17_stepper_module/raw/main/images/halfstep__VYLC4petD0.jpg) ![coils states](https://github.com/katurov/NEMA17_stepper_module/raw/main/images/halfstep1_o6zNxipXxz.jpg)
 
