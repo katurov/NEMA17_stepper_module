@@ -1,6 +1,6 @@
 # NEMA17 stepper module
 
-The idea of this project is to create a module of NEMA17 driven by 1-wire interface. This will allow me to create projects with 4 or 6 drives without complicated arhitecture. Using 1-wire makes possible to use attiny 13 or 85 which looks just fine.
+The idea of this project is to create a module of NEMA17 driven by some interface (e.g. i2c). This will allow me to create projects with 4 or 6 drives without complicated arhitecture.
 
 ## Motor wiring
 
@@ -42,4 +42,4 @@ for ( j = 0; j < 50; j ++) {
 }
 ```
 
-Where `PORTB` is byte from [port manupulation](https://www.arduino.cc/en/Reference/PortManipulation) of Arduino. BTW, `delayMicroseconds(650)` is the minimum for my version of NEMA and a powersource (note that more power (A) will alliw you for faster switching); you should determine this number in your particular case.
+Where `PORTB` is byte from [port manupulation](https://www.arduino.cc/en/Reference/PortManipulation) of Arduino (8-9-10-11-12-13). BTW, `delayMicroseconds(650)` is the minimum for my version of NEMA and a powersource (note that more power (A) will allow you for faster switching); you should determine this number in your particular case.
