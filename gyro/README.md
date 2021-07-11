@@ -1,4 +1,4 @@
-##The Gyro module##
+#The Gyro module#
 
 The idea of this code is to determine necessary length for each table's legs to make table fully horisontal. The part interrested to me is *Trigonometry* where I can use values from gyro to calculate hights of each point.
 
@@ -6,7 +6,7 @@ As soon as I know the delta of Z-position (hight) for leg I can move it. Great.
 
 ##RAW and Rad gyro's values##
 
-[https://github.com/TKJElectronics/Example-Sketch-for-IMU-including-Kalman-filter](Source library by Kristian Lauszus, TKJ Electronics)
+[Source library by Kristian Lauszus, TKJ Electronics](https://github.com/TKJElectronics/Example-Sketch-for-IMU-including-Kalman-filter)
 
 I've used this library as a source and made no changes (yet). This have to be told:
 
@@ -16,7 +16,7 @@ Values ```kalAngleX``` and ```kalAngleY``` in this version are in radians (degre
 
 ##Kalman filtering##
 
-[https://github.com/TKJElectronics/KalmanFilter](Source library by Kristian Lauszus, TKJ Electronics)
+[Source library by Kristian Lauszus, TKJ Electronics](https://github.com/TKJElectronics/KalmanFilter)
 
 This library already included in MPU6050 library by Kristian, so here are no problem to start using it, all code are in thwo parts: initial filling of values and updating it with new ones. In second case we have to give time as a paramater. Initialization: ```kalmanX.setAngle(roll)``` also used if ```roll``` gots out of border; ```kalAngleX = kalmanX.getAngle(roll, gyroXrate, dt)``` for any other case, where ```dt``` is time in seconds from previous call. 
 
