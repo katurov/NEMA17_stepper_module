@@ -65,9 +65,10 @@ Now we have all four points. You can get it via serial just send "L" for it (don
 ## Usage ##
 
 Suppose we have coordinates:
+```
 A : 0.00
 B : 1.00
 C : 1.00
 D : 2.00
-
+```
 So we have to hold A-leg, move B and C legs with constant speed, and move D with speed * 2.
