@@ -1,10 +1,10 @@
-#The Gyro module#
+# The Gyro module #
 
 The idea of this code is to determine necessary length for each table's legs to make table fully horisontal. The part interrested to me is *Trigonometry* where I can use values from gyro to calculate hights of each point.
 
 As soon as I know the delta of Z-position (hight) for leg I can move it. Great.
 
-##RAW and Rad gyro's values##
+## RAW and Rad gyro's values ##
 
 [Source library by Kristian Lauszus, TKJ Electronics](https://github.com/TKJElectronics/Example-Sketch-for-IMU-including-Kalman-filter)
 
@@ -14,7 +14,7 @@ Values ```kalAngleX``` and ```kalAngleY``` in this version are in radians (degre
 
 *TODO*: Calculate offset and add it to initialisation procedure
 
-##Kalman filtering##
+## Kalman filtering ##
 
 [Source library by Kristian Lauszus, TKJ Electronics](https://github.com/TKJElectronics/KalmanFilter)
 
@@ -22,7 +22,7 @@ This library already included in MPU6050 library by Kristian, so here are no pro
 
 *TODO*: well, it is use value of seconds, but called 10 times per second, also it uses ```micros()``` instead of ```millis()``` with no reason.
 
-##Trigonometry##
+## Trigonometry ##
 
 Lets suppose a table as a rectangle with points A, B, C, and D in the centers of legs (no matter how bit the table is):
 ```
@@ -62,7 +62,7 @@ BUT we have two vectors which affects to third "Z-vector" for point. To calculat
 
 Now we have all four points. You can get it via serial just send "L" for it (don't forget to upload code).
 
-##Usage##
+## Usage ##
 
 Suppose we have coordinates:
 A : 0.00
